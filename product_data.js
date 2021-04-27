@@ -1,29 +1,27 @@
-//STILL WORKING ON FINISHING THIS UP AND PUTTING MY OWN FINSIHING TOUCHES. GOING TO RESUBMIT ASAP
-
 var products = [
-    {name : "Louisville Slugger MLB Prime C271",
+    {"name" : "Louisville Slugger",
     "price" : 149.99,
-    "image" : "/Users/KobyBrown/Documents/GitHub/Brown_Koby_Assignment1/Assigment1 images/Louisville.jpeg"},
+    "image" : 'Louisville.jpg'},
 
     
-     {name : "Marucci AP5 Albert Pujols Maple Wood Baseball Bat",
+     {"name" : "Marucci",
      "price" : 149.95,
-     "image" : "/Users/KobyBrown/Documents/GitHub/Brown_Koby_Assignment1/Assigment1 images/AlbertPujolsBat.jpeg"},
-
+     "image" : 'AlbertPujolsBat.jpg'},
+ 
      
-     {name : "Rawlings Velo Adult Birch Wood Baseball Bat",
+     {"name" : "Rawlings",
      "price" : 89.95,
-     "image" : "/Users/KobyBrown/Documents/GitHub/Brown_Koby_Assignment1/Assigment1 images/Rawlings.jpeg"},
+     "image" : 'Rawlings.jpg'},
 
      
-     {name : "Axe Pro Hard Maple L118 Wood Baseball Bat",
+     {"name" : "Axe Pro",
      "price" : 159.99,
-     image : "/Users/KobyBrown/Documents/GitHub/Brown_Koby_Assignment1/Assigment1 images/AxePro.jpeg"},
+     "image" : 'AxePro.jpg'},
 
      
-     {name : "DeMarini Pro Maple Wood Composite Baseball Bat",
+     {"name" : "DeMarini",
      "price" : 199.99,
-     "image" : "/Users/KobyBrown/Documents/GitHub/Brown_Koby_Assignment1/Assigment1 images/Demarini.jpeg"}
+     "image" : 'Demarini.jpg'},
 ];
 
 if(typeof module != 'undefined'){
