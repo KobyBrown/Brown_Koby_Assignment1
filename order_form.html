@@ -1,3 +1,4 @@
+<!--Below functions I have borrowed from Assignment 1 examples.-->
 <!--Links to my products_data.js page to use the array.-->
 <script src="./product_data.js" type="text/javascript"></script>
 <script>
@@ -9,14 +10,14 @@
         else if (parseInt(q) != q) errors.push('<font color="red">Not an integer!</font>'); // Check that it is an integer
         return return_errors ? errors : (errors.length == 0);
     }
-
+//also from assignment 1 examples as well as from lab 12.
     function checkQuantityTextbox(theTextbox) {
        var errs = isNonNegInt(theTextbox.value, true);
         if (errs.length == 0) errs = ['You want:'];
         if (theTextbox.value.trim() == '') errs = ['Quantity'];
         document.getElementById(theTextbox.name + '_label').innerHTML = errs.join(", ");
     }
-
+//From assignment 1 examples and from Lab 12. 
     window.onload = function () {
         let params = (new URL(document.location)).searchParams; // get the query string which has the form data
         // form was submitted so check that quantities are valid then redirect to invoice if ok.
@@ -57,7 +58,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Raleway" rel="stylesheet">
 
-    <link href="products-styles.css" rel="stylesheet">
+    <link href="products_styles.css" rel="stylesheet">
     <style>
         body {
             transform: scale(.4);
@@ -74,6 +75,7 @@
         <div>
             <main>
                 <script>
+//Displays the different items from my products_data.js
                     for (i = 0; i < products.length; i++) {
                         document.write(`
                             <section class="item">
@@ -93,6 +95,7 @@
             <h1>
                 Thanks for ordering!
             </h1>
+<!--Submit button will bring you to my invoice page showing correct items and subtotals.-->
             <input type="submit" value="Purchase!" name="purchase_submit">
         </footer>
     </form>

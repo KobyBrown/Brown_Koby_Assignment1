@@ -37,6 +37,7 @@
 <body>
   <table border="2">
     <tbody>
+      <!--Display's column names-->
       <tr>
         <th style="text-align: center;" width="43%">Item</th>
         <th style="text-align: center;" width="11%">Quantity</th>
@@ -68,7 +69,7 @@
         if (subtotal <= 100) {
           shipping = 5;
         }
-        else if (subtotal <= 100) {
+        else if (subtotal <= 150) {
           shipping = 10;
         }
         else {
@@ -88,6 +89,7 @@
           <script>document.write(subtotal);</script>
         </td>
       </tr>
+      <!--Displays table with correct computation contents-->
       <tr>
         <td style="text-align: center;" colspan="3" width="67%"><span style="font-family: arial;">Tax @
             <script>document.write(100 * tax_rate);</script>%</span></td>
@@ -111,9 +113,9 @@
   <!--Display's shipping info.-->
   <div>
     <br><b>
-      OUR SHIPPING POLICY IS:A subtotal $0 - $49.99 will be $5 shipping
-      A subtotal $50 - $99.99 will be $10 shipping
-      Subtotals over $100 will be charged 5% of the subtotal amount
+      OUR SHIPPING POLICY IS: A subtotal $0 - $100.00 will be $5 shipping.
+      A subtotal $100 - $150 will be $10 shipping.
+      Subtotals over $150 will be charged 5% of the subtotal amount.
     </b> </div>
 </body>
 
